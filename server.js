@@ -1,12 +1,18 @@
+//nessessery files are imported
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
+// port number for the server
 const port = 3001;
 
+// server is created
 http.createServer((req, res) => {
+    // Determine the file path based on the request URL
     let filePath = path.join(__dirname, 'public', req.url === '/' ? 'index.html' : req.url);
     const extname = path.extname(filePath);
+
+    // Determine content type based on file extension
     const contentType = {
         '.html': 'text/html',
         '.css': 'text/css',
@@ -18,6 +24,7 @@ http.createServer((req, res) => {
 
     if (!extname && !filePath.endsWith('.html')) filePath += '.html';
 
+    // Read the requested file from the file system
     fs.readFile(filePath, (err, content) => {
         if (err) {
             if (err.code === 'ENOENT') {
@@ -34,7 +41,7 @@ http.createServer((req, res) => {
             res.end(content, 'utf8');
         }
     });
-}).listen(port, () => {
+}).listen(port, () => {                                             //start server on above port number
     console.log(`Server running at http://localhost:${port}`);
 });
 
