@@ -1,0 +1,683 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* heading css */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 12vmin;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px gray;
+  padding: 0px 3vmin;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#logo {
+  font-size: 6vmin;
+  font-weight: 800;
+  color: orange;
+}
+
+#menu {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 3vmin;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #213454;
+}
+
+ul li select {
+  border: none;
+  font-size: 3.2vmin;
+}
+
+#menu-bar {
+  display: none;
+}
+
+.toggle-label {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 3.2vmin;
+  padding: 3.5vmin;
+  color: rgb(12, 12, 12);
+  font-weight: 500;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.userInfo div {
+  margin: 10px;
+}
+
+.searchBar {
+  height: 35px;
+  width: 220px;
+  border-radius: 20px;
+  border: solid 1px gray;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  border: none;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.searchBar i {
+  font-size: 25px;
+  color: #213454;
+}
+
+.userItem {
+  font-size: 22px;
+  border: solid 1px gray;
+  height: 30px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+/* landing page css start */
+
+/* section1 css */
+
+.section1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box1 {
+  display: grid;
+  align-items: center;
+  width: 50%;
+  padding: 6vmin;
+}
+
+.first1 {
+  display: grid;
+  gap: 8vmin;
+}
+
+.box2 {
+  width: 50%;
+}
+
+.box2 .image img {
+  width: 80%;
+  margin: 7vmin;
+}
+
+.first1 h2,
+.comp21 h2 {
+  font-size: 7vmin;
+  font-weight: 700;
+}
+
+h2 .heading {
+  color: rgb(57, 149, 202);
+}
+
+p {
+  font-size: 2.5vmin;
+}
+
+.first1 button {
+  padding: 1.5vmin 6vmin;
+  font-size: 3.5vmin;
+  margin: auto;
+  border-radius: 30px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.first1 button a{
+  color: #fff;
+}
+
+/* section2 css */
+
+.companyInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: orange;
+  height: 200px;
+}
+
+.info1 {
+  display: flex;
+  gap: 2vmin;
+  align-items: center;
+}
+
+.infoIcon i {
+  font-size: 7vmin;
+  color: #fff;
+}
+
+.dataInfo .info11 {
+  font-size: 4vmin;
+  font-weight: 700;
+  color: #fff;
+}
+
+.dataInfo .info12 {
+  font-size: 2.5vmin;
+  color: #fff;
+}
+
+/* landing page css end */
+
+/* Product page css start */
+.productSection1 {
+  background-color: #eee;
+}
+
+.prodInfo1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5vmin;
+}
+
+.prodInfo1 .comp1 {
+  height: 30%;
+  width: 30%;
+}
+
+.prodInfo1 .comp2 {
+  width: 50%;
+}
+
+.comp2 .comp21 {
+  display: grid;
+  gap: 2vmin;
+}
+
+.comp1 .image img {
+  width: 100%;
+}
+
+.comp21 .priceDetails {
+  display: flex;
+  gap: 6vmin;
+  height: 8vmin;
+}
+
+.priceDetails .price {
+  font-size: 4.5vmin;
+  color: blue;
+  font-weight: 600;
+}
+
+.offerDetail .info1 {
+  font-size: 3vmin;
+  color: green;
+}
+
+.offerDetail .info2 {
+  font-size: 2.5vmin;
+}
+
+.comp21 .itemNumbers {
+  display: flex;
+  gap: 5vmin;
+  align-items: center;
+}
+
+.itemCount select {
+  padding: 2vmin;
+  height: 6vmin;
+  width: 10vmin;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.itemNumbers button {
+  height: 8vmin;
+  width: 30vmin;
+  background: rgb(194, 126, 0);
+  border-radius: 15px;
+  font-size: 3vmin;
+  display: flex;
+  gap: 2vmin;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemNumbers button a{
+  color: #fff;
+}
+
+/* productImgColl css start */
+
+.productSection1 .allImages {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vmin;
+}
+
+.image1 img {
+  height: 20vmin;
+  width: 20vmin;
+}
+/* productImgColl css end */
+
+/* Product page css end */
+
+/* shopping cart Section css start */
+.productMainSection {
+  margin-left: 8vmin;
+}
+
+.shoppingCartSection h2 {
+  font-size: 7vmin;
+  margin: 3vmin 0px;
+}
+
+.cartInfoBox {
+  display: flex;
+  margin-top: 5vmin;
+}
+
+.leftBox {
+  width: 50%;
+}
+
+.rightBox {
+  width: 40%;
+}
+
+tr,
+th,
+td {
+  height: 8.5vmin;
+  padding: 0 3vmin;
+  font-size: 3vmin;
+}
+
+th {
+  border-bottom: solid gray 1px;
+}
+
+td span{
+  font-size: 2.8vmin;
+}
+
+.cartInfoBox .rightBox .cart {
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 5vmin;
+  padding: 3vmin;
+}
+
+.couponBox .coupon {
+  height: 7.5vmin;
+  width: 90%;
+}
+
+.couponBox span {
+  font-size: 3vmin;
+  color: #333;
+}
+
+.couponBox .coupon input {
+  width: 60%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 3vmin;
+}
+
+.couponBox .coupon button {
+  width: 30%;
+  color: #fff;
+  background-color: rgb(73, 73, 233);
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 3vmin;
+}
+
+.cartDetails {
+  display: grid;
+  gap: 3vmin;
+}
+
+.cartDetail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartDetail p {
+  font-size: 2.5vmin;
+  color: #333;
+}
+
+.cartDetail h3 {
+  font-size: 2.8vmin;
+  color: #333;
+  font-size: 700;
+}
+
+.payButton {
+  margin: auto;
+  height: 8vmin;
+  width: 45vmin;
+  background-color: rgb(254, 173, 22);
+  color: #fff;
+  border: none;
+  font-size: 3vmin;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.payButton a {
+  color: #fff;
+}
+
+.paymentMode {
+  display: flex;
+  justify-content: space-evenly;
+}
+.paymentMode img {
+  max-height: 3vmin;
+}
+
+.continueShooping button {
+  font-size: 3vmin;
+  border: none;
+  margin-top: 1.5vmin;
+  margin-bottom: 1.5vmin;
+}
+/* shopping cart Section css end */
+
+
+
+/* payment page css start */
+
+.paymentSection1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentSection1 .rightBox{
+  background-color: rgb(238, 255, 243);
+  min-width: 45%;
+  padding: 5vmin;
+}
+
+.paymentSection1 .rightBox .cart {
+  display: grid;
+  gap: 5vmin;
+}
+
+.rightBox .cart h2{
+  text-align: center;
+  font-size: 6vmin;
+}
+
+.paymentSection1 .leftBox {
+  max-width: 40%;
+  padding: 5vmin;
+}
+
+.cheakoutPage {
+  padding: 30px;
+  font-size: 3vmin;
+}
+
+.paymentSection1 .leftBox .left2 {
+  display: grid;
+  gap: 5vmin;
+  min-width: 100%;
+}
+
+.paymentInfoh2 {
+  font-size: 5.2vmin;
+  font-weight: 600;
+  padding: 2vmin 0;
+  color: #333;
+}
+
+.paymentSection1 .leftBox .left2 input {
+  width: 98%;
+  height: 6.5vmin;
+  border-radius: 10px;
+  border: gainsboro 1px solid;
+}
+
+.left2 ::placeholder{
+  font-size: 2.5vmin;
+  color: #aaa;
+  padding: 15px;
+}
+
+.paymentTypeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15vmin;
+}
+
+.PaymentDetails .paymentBox {
+  background-color: #eee;
+  padding: 2vmin;
+  border-radius: 15px;
+}
+
+.paymentTypeBox .paymentType {
+  height: 8vmin;
+  width: 13vmin;
+  padding: 1vmin;
+  color: #222;
+  background-color: #fff;
+  font-size: 3vmin;
+  display: grid;
+  align-items: center;
+  border: solid 2px #ccc;
+  border-radius: 15px;
+}
+
+.paymentMoreType{
+  height: 8vmin;
+  width: 7vmin;
+  padding: 1vmin;
+  color: #222;
+  background-color: #fff;
+  font-size: 3vmin;
+  display: grid;
+  align-items: center;
+  border: solid 2px #ccc;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.paymentTypeBox .paymentType:hover, .paymentTypeBox .paymentMoreType:hover {
+  color: orange;
+  align-items: center;
+  border: solid 2px orange;
+}
+
+.box50 {
+  min-width: 40%;
+}
+
+.box50 select {
+  min-width: 100%;
+  height: 6.5vmin;
+  border: none;
+  border-radius: 10px;
+}
+
+/* payment page css end */
+
+/* footer */
+footer {
+  height: 50px;
+  background-color: black;
+  color: #fff;
+}
+
+
+@media (max-width: 860px) {
+  #menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 12vmin;
+    left: 0;
+    box-shadow: 0px 5px 10px gray;
+    z-index: 9;
+  }
+
+  #menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #menu ul li {
+    width: 100%;
+    text-align: center;
+    margin: 1vmin 0;
+  }
+
+  #menu ul li a,
+  ul li select {
+    font-size: 4vmin;
+    padding: 2vmin;
+  }
+
+  .toggle-label {
+    display: block;
+    visibility: visible;
+    cursor: pointer;
+    font-size: 5vmin;
+  }
+
+  #menu-bar:checked + .toggle-label + #menu {
+    display: flex;
+  }
+
+  .userInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .userInfo .hide{
+    display: none;
+  }
+
+  .searchBar,
+  .userItem,
+  .account {
+    margin: 1vmin 0;
+  }
+
+  .section1 {
+    display: grid;
+    justify-content: stretch;
+  }
+
+  .box1 {
+    width: 90%;
+  }
+
+  .box2 {
+    width: 100%;
+  }
+  
+  .prodInfo1 {
+    display: grid;
+    justify-content: stretch;
+  }
+  
+  .prodInfo1 .comp1 {
+    width: 100%;
+    position: relative;
+    bottom: 35%;
+  }
+  
+  .prodInfo1 .comp2 {
+    width: 100%;
+  }
+
+  .comp21 .priceDetails, .itemNumbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .cartInfoBox{
+    display: grid;
+  }
+
+  .cartInfoBox, .leftBox{
+    width: 100%;
+  }
+
+  .cartInfoBox, .leftBox table{
+    margin: auto;
+  }
+
+  .cartInfoBox, .rightBox{
+    width: 90%;
+  }
+
+
+  /* payment page css start */
+
+.paymentSection1 {
+  display: grid;
+  justify-content: stretch;
+}
+
+.paymentSection1 .rightBox{
+  background-color: rgb(238, 255, 243);
+  min-width: 90%;
+  padding: 5vmin;
+}
+
+.paymentSection1 .leftBox {
+  max-width: 90%;
+  padding: 5vmin;
+}
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product</title>
+  </head>
+  <body>
+        <header>
+      <div class="logo" id="logo">Thala7.</div>
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar" class="toggle-label"><i class="fa-solid fa-bars" style="color: #213454"></i></label>
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <select name="Brands" id="Brands">
+              <option value="abc">Brands</option>
+              <option value="bca">Home</option>
+              <option value="cba">Home</option>
+            </select>
+          </li>
+          <li>
+            <select name="more" id="more">
+              <option value="xy">More</option>
+              <option value="yx">Home</option>
+            </select>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="userInfo">
+        <div class="searchBar hide">
+          <input type="search" placeholder="Search..." /><i class="fa-solid fa-magnifying-glass" style="color: #676660"></i>
+        </div>
+        <div class="userItem hide"><i class="fa-solid fa-bag-shopping"></i>0</div>
+        <div class="account" id="account">
+          <img src="image/user.png" alt="User" class="userImage" height="40px" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="productSection1">
+        <div class="prodInfo1">
+          <div class="comp1">
+            <div class="image">
+              <img src="image/1.jpg" id="img_1" height="" />
+            </div>
+          </div>
+
+          <div class="comp2">
+            <div class="comp21">
+              <h2>
+                Stylish and Comfortable Running Shoes - Perfect for All-Day Wear
+              </h2>
+              <p>
+                Experience unmatched comfort and style with these running shoes. Perfect for everyday wear and intense workouts. Breathable material ensures your feet stay cool and dry. Durable and lightweight design for long-lasting performance.
+              </p>
+              <div class="priceDetails">
+                <div class="price">1000rs.</div>
+                <div class="offerDetail">
+                  <div class="info1">SAVE 12%</div>
+                  <div class="info2">Inclusive of all taxes</div>
+                </div>
+              </div>
+              <div class="itemNumbers">
+                <div class="itemCount">
+                  <select name="number" id="itemnumber">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+                <button>
+                  <a href="ShoppingCart.html">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to cart
+                </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="allImages">
+          <div class="image1">
+            <img src="image/1.jpg" alt="image1" class="productImg1" />
+          </div>
+          <div class="image1">
+            <img src="image/1.jpg" alt="image1" class="productImg1" />
+          </div>
+          <div class="image1">
+            <img src="image/1.jpg" alt="image1" class="productImg1" />
+          </div>
+          <div class="image1">
+            <img src="image/1.jpg" alt="image1" class="productImg1" />
+          </div>
+          <div class="image1">
+            <img src="image/1.jpg" alt="image1" class="productImg1" />
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
